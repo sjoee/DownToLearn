@@ -15,4 +15,12 @@
     2.2.4 [sign system= sign language{ASL, BSL}, 
                         makaton{combo of signs, symnols & spoken words to support comm},
                         signalog{signs spoken in word order, based on BSL, also an advanced makaton} ]
-2.3 remove copyright and watermark in index file; as well as readme, security in md files. 
+2.3 add the page for parental report
+2.4 remove copyright and watermark in index file; as well as readme, security in md files. [index.ts, FUNDING.yml, ]
+2.5 files to edit : .github , actions, app, app.main.(marketing), config.index.ts, db, public, scripts.prod.ts
+2.6 files to not touch: .next, .vscode, app.components, lib, node_modules, store
+        
+
+reminder:
+- npm run dev only works in DownToLearn file 
+- to update the DownToLearn-app; cd to DownToLearn-app then git add, commit , git push origin main 

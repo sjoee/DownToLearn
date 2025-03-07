@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev && start http://localhost:3000/admin#/courses",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -31,7 +31,7 @@
     "radix-ui",
     "cn",
     "clsx",
-    "lingo",
+    "DownToLearn",
     "postgresql",
     "sonner",
     "drizzle",

@@ -26,8 +26,13 @@ const main = async () => {
     // Insert courses
     const courses = await db
       .insert(schema.courses)
-      .values([{ title: "Spanish", imageSrc: "/es.svg" }])
+      .values([
+        { title: "Spanish", imageSrc: "/es.svg" },
+        { title: "Italian", imageSrc: "/it.svg" }
+      ])
       .returning();
+
+      
 
     // For each course, insert units
     for (const course of courses) {
@@ -330,6 +335,4 @@ const main = async () => {
     console.error(error);
     throw new Error("Failed to seed database");
   }
-};
-
-void main();
+}
