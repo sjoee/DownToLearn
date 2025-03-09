@@ -40,3 +40,7 @@ export const siteConfig: Metadata = {
     "css",
   ] as Array<string>,
 } as const;
+
+export const links = {
+  sourceCode: "https://github.com/sjoee/DownToLearn.git",
+} as const;

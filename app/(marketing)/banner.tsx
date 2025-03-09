@@ -62,16 +62,14 @@ const Banner = ({ hide, setHide }: BannerProps) => {
             >
               fork this repo
             </Link>{" "}
-            or{" "}
+            {/* or{" "}
             <Link
               href={`mailto:${links.email}`}
               target="_blank"
               rel="noreferrer noopener"
               className="text-green-600 transition-opacity hover:opacity-75"
-            >
-              Contact me
-            </Link>{" "}
-            for access.
+            > */}
+              {/* Contact me for access. */}
           </p>
         </div>
 
