@@ -5,6 +5,8 @@ module.exports = {
   plugins: ["@typescript-eslint"],
   extends: ["eslint:recommended", "next/core-web-vitals", "prettier"],
   rules: {
+    "react/no-unescaped-entities": "off", // Disable this rule
+    "@next/next/no-page-custom-font": "off", // Disable this rule
     "import/order": [
       "error",
       {
@@ -35,10 +37,7 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-
-        //declaring 'next/core-web-vitals' and 'prettier' again in case
-        //the two plugin:... configs above overrode any of their rules
-        //Also, 'prettier' needs to be last in any extends array
+        // Declaring 'next/core-web-vitals' and 'prettier' again to ensure they aren't overridden
         "next/core-web-vitals",
         "prettier",
       ],

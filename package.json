@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev && start http://localhost:3000/admin#/courses",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -13,67 +13,7 @@
     "db:push": "npx drizzle-kit push:pg",
     "db:prod": "tsx ./scripts/prod.ts"
   },
-  "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
-  },
-  "description": "Interactive platform for language learning with lessons, quizzes, and progress tracking.",
-  "keywords": [
-    "reactjs",
-    "nextjs",
-    "vercel",
-    "react",
-    "duolingo-clone",
-    "learn-language",
-    "shadcn",
-    "shadcn-ui",
-    "radix-ui",
-    "cn",
-    "clsx",
-    "DownToLearn",
-    "postgresql",
-    "sonner",
-    "drizzle",
-    "zustand",
-    "mysql",
-    "lucide-react",
-    "next-themes",
-    "clerk-themes",
-    "clerk",
-    "postcss",
-    "prettier",
-    "react-dom",
-    "tailwindcss",
-    "tailwindcss-animate",
-    "ui/ux",
-    "js",
-    "javascript",
-    "typescript",
-    "eslint",
-    "html",
-    "css"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sanidhyy/duolingo-clone.git"
-  },
-  "homepage": "https://github.com/sanidhyy/duolingo-clone#readme",
-  "bugs": {
-    "url": "https://github.com/sanidhyy/duolingo-clone/issues",
-    "email": "sanidhya.verma12345@gmail.com"
-  },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
-  ],
+  
   "dependencies": {
     "@clerk/nextjs": "^4.31.6",
     "@neondatabase/serverless": "^0.9.0",

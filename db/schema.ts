@@ -9,7 +9,7 @@ import {
   timestamp,
 } from "drizzle-orm/pg-core";
 
-import { MAX_HEARTS } from "@/constants";
+import { MAX_HEARTS } from "../constants"; // Corrected import statement
 
 export const courses = pgTable("courses", {
   id: serial("id").primaryKey(),
