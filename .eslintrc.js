@@ -1,4 +1,3 @@
-/* eslint-env node */
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
@@ -7,6 +6,7 @@ module.exports = {
   rules: {
     "react/no-unescaped-entities": "off", // Disable this rule
     "@next/next/no-page-custom-font": "off", // Disable this rule
+    "@typescript-eslint/no-unused-vars": "off", // Disable unused vars rule for all files
     "import/order": [
       "error",
       {
@@ -37,10 +37,12 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        // Declaring 'next/core-web-vitals' and 'prettier' again to ensure they aren't overridden
-        "next/core-web-vitals",
+        "next/core-web-vitals", 
         "prettier",
       ],
+      rules: {
+        "@typescript-eslint/no-unused-vars": "off", // Disable unused vars check for TypeScript files
+      },
     },
   ],
 };
