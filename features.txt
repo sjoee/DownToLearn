@@ -1,0 +1,31 @@
+1. set up 
+1.1 webhook endpoint - set and change api in .env file; can setup last
+    change webhook stripe from real time payment noti to lessons reminder noti;
+1.2 deploy app if needed
+    run it on vercel; rn it is dismissed bcs not needed
+1.3 for clerk admin id in env file  [dashboard > Users]
+    add in another admin for this project to access the web version
+
+2. edit/changes
+2.1 change main page that has the spanish lesson into multiple topics[math, english]
+2.2 each topic has multiple games for different motor skills 
+    2.2.1 [maths= drag & drop, select correct ans, reading(problem statement), tracing, visuals, memory card games]
+    2.2.2 [english= drag & drop, select correct ans, speech+language, listening, visuals, tracing, memory card games]
+    2.2.3 [social skills= emotion+expression recognition using select correct ans {happy face image + 3 options of answers 'happy' 'sad' 'angry'}]
+    2.2.4 [sign system= sign language{ASL, BSL}, 
+                        makaton{combo of signs, symnols & spoken words to support comm},
+                        signalog{signs spoken in word order, based on BSL, also an advanced makaton} ]
+2.3 add the page for parental report
+2.4 remove copyright and watermark in index file; as well as readme, security in md files. [index.ts, FUNDING.yml, ]
+2.5 files to edit : .github , actions, app, app.main.(marketing), config.index.ts, db, public, scripts.prod.ts
+2.6 files to not touch: .next, .vscode, app.components, lib, node_modules, store
+2.7 delete FUNDING.yml , ISSUE_TEMPLATE, github/images
+
+
+
+coe of conduct and contributing.md files. REMOVE THEM 
+        
+
+reminder:
+- npm run dev only works in DownToLearn file 
+- to update the DownToLearn-app; cd to DownToLearn-app then git add, commit , git push origin main 
